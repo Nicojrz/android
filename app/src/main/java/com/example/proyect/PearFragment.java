@@ -12,25 +12,27 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
-
-public class sandia extends Fragment implements View.OnClickListener {
-
-
+public class PearFragment extends Fragment implements View.OnClickListener
+{
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sandia, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
+        return inflater.inflate(R.layout.fragment_pera, container, false);
     }
+
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState)
+    {
         super.onViewCreated(view, savedInstanceState);
-        ImageButton botoncitto = view.findViewById(R.id.btnsandia);
+
+        ImageButton botoncitto = view.findViewById(R.id.btnpera);
+
         botoncitto.setOnClickListener(this);
     }
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View v)
+    {
         Navigation.findNavController(v).navigate(R.id.menu);
     }
 }

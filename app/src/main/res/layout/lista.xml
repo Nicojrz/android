@@ -28,5 +28,4 @@
             android:gravity="center"
             android:id="@+id/texto2"/>
     </LinearLayout>
-
 </LinearLayout>

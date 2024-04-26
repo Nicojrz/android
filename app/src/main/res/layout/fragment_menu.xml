@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".menu">
+    tools:context=".AppMenu">
 
     <LinearLayout
         android:id="@+id/layout1"
@@ -13,7 +13,6 @@
         android:layout_marginTop="40pt"
         android:layout_marginLeft="60dp">
 
-        <!-- ImageButton en la posición (0, 0) -->
         <ImageButton
             android:id="@+id/imageButton1"
             android:layout_width="140dp"
@@ -21,7 +20,6 @@
             android:src="@drawable/orange"
             android:scaleType="fitCenter" />
 
-        <!-- ImageButton en la posición (0, 1) -->
         <ImageButton
             android:id="@+id/imageButton2"
             android:layout_width="140dp"
@@ -36,7 +34,7 @@
         android:orientation="horizontal"
         android:layout_marginTop="108pt"
         android:layout_marginLeft="60dp">
-        <!-- ImageButton en la posición (0, 2) -->
+
         <ImageButton
             android:id="@+id/imageButton3"
             android:layout_width="140dp"
@@ -44,7 +42,6 @@
             android:src="@drawable/sandia"
             android:scaleType="fitCenter" />
 
-        <!-- ImageButton en la posición (1, 0) -->
         <ImageButton
             android:id="@+id/imageButton4"
             android:layout_width="140dp"

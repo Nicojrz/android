@@ -10,26 +10,29 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
 
-public class orange extends Fragment implements View.OnClickListener {
-
+public class OrangeFragment extends Fragment implements View.OnClickListener
+{
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
         return inflater.inflate(R.layout.fragment_orange, container, false);
     }
+
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState)
+    {
         super.onViewCreated(view, savedInstanceState);
+
         ImageButton botoncitto = view.findViewById(R.id.imgBoran);
+
         botoncitto.setOnClickListener(this);
     }
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View v)
+    {
         Navigation.findNavController(v).navigate(R.id.menu);
     }
 }

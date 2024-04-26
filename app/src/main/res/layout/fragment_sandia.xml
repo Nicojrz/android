@@ -3,14 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".sandia">
+    tools:context=".WatermelonFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <ImageButton
         android:id="@+id/btnsandia"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:src="@drawable/sandia"
         android:scaleType="fitCenter" />
-
 </FrameLayout>

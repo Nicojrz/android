@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/menu"
-        android:name="com.example.proyect.menu"
+        android:name="com.example.proyect.AppMenu"
         android:label="fragment_menu"
         tools:layout="@layout/fragment_menu" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/orange"
-        android:name="com.example.proyect.orange"
+        android:name="com.example.proyect.OrangeFragment"
         android:label="fragment_orange"
         tools:layout="@layout/fragment_orange" >
         <action
@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/pera"
-        android:name="com.example.proyect.pera"
+        android:name="com.example.proyect.PearFragment"
         android:label="fragment_pera"
         tools:layout="@layout/fragment_pera" >
         <action
@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/sandia"
-        android:name="com.example.proyect.sandia"
+        android:name="com.example.proyect.WatermelonFragment"
         android:label="fragment_sandia"
         tools:layout="@layout/fragment_sandia" >
         <action
@@ -52,7 +52,7 @@
     </fragment>
     <fragment
         android:id="@+id/uva"
-        android:name="com.example.proyect.uva"
+        android:name="com.example.proyect.GrapeFragment"
         android:label="fragment_uva"
         tools:layout="@layout/fragment_uva" >
         <action

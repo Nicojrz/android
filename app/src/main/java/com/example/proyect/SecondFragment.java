@@ -12,23 +12,27 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-public class segundo extends Fragment  implements View.OnClickListener{
-
+public class SecondFragment extends Fragment  implements View.OnClickListener
+{
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
         return inflater.inflate(R.layout.fragment_segundo, container, false);
     }
+
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState)
+    {
         super.onViewCreated(view, savedInstanceState);
+
         Button botoncitto = view.findViewById(R.id.btnatras);
+
         botoncitto.setOnClickListener(this);
     }
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View v)
+    {
         Navigation.findNavController(v).navigate(R.id.principal);
     }
 }
