@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navimg"
+    app:startDestination="@id/menu">
+
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.example.proyect.menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menu_to_orange"
+            app:destination="@id/orange" />
+        <action
+            android:id="@+id/action_menu_to_pera"
+            app:destination="@id/pera" />
+        <action
+            android:id="@+id/action_menu_to_sandia"
+            app:destination="@id/sandia" />
+        <action
+            android:id="@+id/action_menu_to_uva"
+            app:destination="@id/uva" />
+    </fragment>
+    <fragment
+        android:id="@+id/orange"
+        android:name="com.example.proyect.orange"
+        android:label="fragment_orange"
+        tools:layout="@layout/fragment_orange" >
+        <action
+            android:id="@+id/action_orange_to_menu"
+            app:destination="@id/menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/pera"
+        android:name="com.example.proyect.pera"
+        android:label="fragment_pera"
+        tools:layout="@layout/fragment_pera" >
+        <action
+            android:id="@+id/action_pera_to_menu"
+            app:destination="@id/menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/sandia"
+        android:name="com.example.proyect.sandia"
+        android:label="fragment_sandia"
+        tools:layout="@layout/fragment_sandia" >
+        <action
+            android:id="@+id/action_sandia_to_menu"
+            app:destination="@id/menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/uva"
+        android:name="com.example.proyect.uva"
+        android:label="fragment_uva"
+        tools:layout="@layout/fragment_uva" >
+        <action
+            android:id="@+id/action_uva_to_menu"
+            app:destination="@id/menu" />
+    </fragment>
+</navigation>
